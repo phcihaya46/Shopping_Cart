@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Passcard</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/fastbootstrap@2.0.2/dist/css/fastbootstrap.min.css" rel="stylesheet" integrity="sha256-ywOwZUVHXdYvx4hw3+x4KBDt8Fb8cks0iorq4Tzeshg=" crossorigin="anonymous">
+    <link rel="stylesheet" href="test.css">
+    
+    <link
+    rel="shortcut icon"
+    href="https://job-passcard.vercel.app/logo.png"
+    type="image/x-icon"
+  />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg p-1 justify-content-between">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarButtonsExample" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <a class="navbar-brand" href="#">
+                <div class="logo">
+                    <img src="https://job-passcard.vercel.app/logo.png" alt="logo">
+                    <p>Job</p><span>Passcard</span>
+                </div>
+            </a>
+            <div class="navbar-brand">
+                <div class="menu-icon d-lg-none">
+                    <a href="#"><i class="bi bi-search"></i></a>
+                </div>
+                <div class="menu-icon d-lg-none">
+                    <a href="#"><i class="bi bi-cart"></i></a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link px3" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link px3" aria-current="page" href="#">PASSCARD</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link px3" aria-current="page" href="#">PROFILE</a>
+                    </li>
+                </ul>
+                <div class="d-flex  ms-auto navbar-nav ">
+
+                    <div class="nav-item icon-home ">
+                        <div class="" aria-current="page" href="#"><i class="bi bi-search"></i></div>
+                    </div>
+
+                    <div class="nav-item icon-home ">
+                        <div class="number"><i class="bi bi-cart3 cart-icon"></i><span class="badge">5</span></div>
+                    </div>
+
+                </div>
+                <div class="navbar-nav">
+                    <div class="nav-item ">
+                        <a class="nav-link px3 " aria-current="page" href="#">LOGIN</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link px3" aria-current="page" href="#">SIGN UP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>My Cart</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="delete-btn">
+                            <img src="https://job-passcard.vercel.app/delete-btn.png" alt="" width="40px" height="40px">
+                        </div>
+                        <div class="card-blue">
+                            <div class="card-icon">
+                                <img src="https://job-passcard.vercel.app/file-icon-blue.png" alt="" width="20px" height="20px">
+                            </div>
+                            <p>Google Doc</p>
+                            <p>Used for Business</p>
+                        </div>
+                        <div class="suphakit">
+                            <p>Google Doc</p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="rating-container" id="rating-container-1">
+                                        <input type="radio" id="s1" name="rating1" value="1">
+                                        <label for="s1" onclick="changeColor(this, 'rating-container-1')"></label>
+                                        <input type="radio" id="s2" name="rating1" value="2">
+                                        <label for="s2" onclick="changeColor(this, 'rating-container-1')"></label>
+                                        <input type="radio" id="s3" name="rating1" value="3">
+                                        <label for="s3" onclick="changeColor(this, 'rating-container-1')"></label>
+                                        <div class="dropdown">
+                                            <div class="dropdown-btn" onclick="toggleDropdown(this)">
+                                                <a id="selectedValue">LV-1-3 </a>
+                                            </div>
+                                            <div class="dropdown-content">
+                                                <a href="#" value="LV-1-3" onclick="setValue(this, 'selectedValue')" class="selected"><i class="bi bi-check-lg"></i> LV-1-3</a>
+                                                <a href="#" value="LV-2-3" onclick="setValue(this, 'selectedValue')"><i class="bi bi-check-lg"></i> LV-2-3</a>
+                                                <a href="#" value="LV-3-3" onclick="setValue(this, 'selectedValue')"><i class="bi bi-check-lg"></i> LV-3-3</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <font color="#ccc">150 THB</font>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="https://job-passcard.vercel.app/delete-btn.png" alt="" width="40px" height="40px">
+
+                        <div class="card-orien">
+                            <div class="card-icon">
+                                <img src="https://job-passcard.vercel.app/file-icon-blue.png" alt="" width="20px" height="20px">
+                            </div>
+                            <p class="lead">Google Doc</p>
+                            <p>Used for Business</p>
+                        </div>
+                        <div class="">
+                            <p>Google Doc</p>
+                            <div class="row">
+                                <div class="col-ld">
+                                    <div class="rating-container" id="rating-container-2">
+                                        <input type="radio" id="d1" name="rating2" value="1">
+                                        <label for="d1" onclick="changeColor(this, 'rating-container-2')"></label>
+                                        <input type="radio" id="d2" name="rating2" value="2">
+                                        <label for="d2" onclick="changeColor(this, 'rating-container-2')"></label>
+                                        <input type="radio" id="d3" name="rating2" value="3">
+                                        <label for="d3" onclick="changeColor(this, 'rating-container-2')"></label>
+                                        <div class="dropdown">
+                                            <div class="dropdown-btn" onclick="toggleDropdown(this)">
+                                                <a id="selectedValue2">LV-1/3</a>
+                                            </div>
+                                            <div class="dropdown-content">
+                                                <a href="#" value="LV-1/3" onclick="setValue(this, 'selectedValue2')" class="selected"><i class="bi bi-check-lg"></i>LV-1/3</a>
+                                                <a href="#" value="LV-2/3" onclick="setValue(this, 'selectedValue2')"><i class="bi bi-check-lg"></i>LV-2/3</a>
+                                                <a href="#" value="LV-3/3" onclick="setValue(this, 'selectedValue2')"><i class="bi bi-check-lg"></i>LV-3/3</a>
+                                                <a href="#" value="LV-4/4" onclick="setValue(this, 'selectedValue2')"><i class="bi bi-check-lg"></i>LV-4/4</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <font color="#ccc">150 THB</font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card-oredr">
+                    <p>Order Info</p>
+                    <div class="Subtotal">
+                        <div>
+                            <p>Subtotal</p>
+                        </div>
+                        <div>
+                            <p>THB 300</p>
+                        </div>
+                    </div>
+                    <div class="totle">
+                        <div class="icon">
+                            <img src="https://job-passcard.vercel.app/cupon-icon.png" alt="icon" width="20px" height="20px">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="Promotion code">
+                        </div>
+                        <div>
+                            <button class="btng">Apply</button>
+                        </div>
+                    </div>
+                    <div class="Payment">
+                        <div>
+                            <p>Total Payment</p>
+                        </div>
+                        <div>
+                            <span class="text-green-400">THB 300</span>
+                        </div>
+                    </div>
+                    <div align="center">
+                        <button class="btngreen">Login To Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        function toggleDropdown(btn) {
+            btn.closest('.dropdown').classList.toggle('active');
+        }
+
+        function setValue(element, targetId) {
+            var selectedValue = element.getAttribute('value');
+            document.getElementById(targetId).innerText = selectedValue;
+
+            var options = element.closest('.dropdown').querySelectorAll('.dropdown-content a');
+            options.forEach(function(option) {
+                option.classList.remove('selected');
+            });
+
+
+            element.classList.add('selected');
+
+            element.closest('.dropdown').classList.remove('active');
+        }
+    </script>
+  
+    <script>
+        function changeColor(clickedLabel, containerId) {
+            var rating = parseInt(clickedLabel.previousElementSibling.value);
+
+            var container = document.getElementById(containerId);
+            var labels = container.querySelectorAll('label');
+
+            labels.forEach(function(label) {
+                var labelRating = parseInt(label.previousElementSibling.value);
+                label.style.backgroundColor = labelRating <= rating ? '#34d399' : '#f3f4f6';
+            });
+        }
+    </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/fastbootstrap@2.0.2/dist/js/fastbootstrap.min.js" integrity="sha256-o0tNXN7ia0O9G0qNbrzBkEEiQTv+GeW5EO4LjnfDkZk=" crossorigin="anonymous"></script>
+
+</html>
